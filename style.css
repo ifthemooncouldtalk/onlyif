@@ -11,6 +11,27 @@ body {
   overflow: hidden;
   flex-direction: column;
   text-align: center;
+  position: relative;
+}
+
+/* animated stars */
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: rise infinite linear;
+}
+
+@keyframes rise {
+  from {
+    transform: translateY(100vh);
+  }
+  to {
+    transform: translateY(-10vh);
+  }
 }
 
 .screen {
