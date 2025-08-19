@@ -77,8 +77,8 @@ body {
 /* --- skip to (plain text + animated panel) --- */
 
 .skip-toggle {
-  position: absolute;
-  bottom: 24px;
+  position: fixed; /* was absolute */
+  bottom: calc(24px + env(safe-area-inset-bottom)); /* safe area aware */
   left: 50%;
   transform: translateX(-50%);
   font-size: 1.1rem;
@@ -87,18 +87,18 @@ body {
   user-select: none;
   opacity: 0.85;
   z-index: 1001;
-  background: none; /* ensure no rectangle */
-  border: none;     /* ensure no rectangle */
-  padding: 0;       /* ensure no rectangle */
+  background: none;
+  border: none;
+  padding: 0;
 }
 .skip-toggle:hover { opacity: 1; text-decoration: underline; }
 
 /* panel */
 .skip-panel {
-  position: absolute;
+  position: fixed; /* was absolute */
   left: 50%;
   transform: translateX(-50%) translateY(10px);
-  bottom: 70px;
+  bottom: calc(70px + env(safe-area-inset-bottom));
   width: min(92vw, 680px);
   max-height: 60vh;
   overflow-y: auto;
@@ -137,3 +137,16 @@ body {
 }
 .skip-item:hover { background: rgba(255,255,255,0.10); }
 .skip-item:last-child { border-bottom: none; }
+
+/* --- mobile adjustments --- */
+@media (max-width: 600px) {
+  .skip-toggle {
+    font-size: 0.9rem;
+    bottom: calc(16px + env(safe-area-inset-bottom));
+  }
+
+  .skip-panel {
+    bottom: calc(90px + env(safe-area-inset-bottom)); /* lift panel a bit */
+    max-height: 50vh; /* avoid covering entire screen */
+  }
+}
