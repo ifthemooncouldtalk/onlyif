@@ -1,3 +1,17 @@
+// --- generate stars dynamically ---
+document.addEventListener("DOMContentLoaded", () => {
+  for (let i = 0; i < 100; i++) {
+    const star = document.createElement("div");
+    star.classList.add("star");
+    star.style.left = Math.random() * 100 + "vw";
+    star.style.top = Math.random() * 100 + "vh";
+    star.style.animationDuration = 5 + Math.random() * 10 + "s";
+    star.style.opacity = Math.random();
+    star.style.width = star.style.height = Math.random() * 2 + 1 + "px";
+    document.body.appendChild(star);
+  }
+});
+
 const screens = document.querySelectorAll(".screen");
 let currentScreen = 0;
 
