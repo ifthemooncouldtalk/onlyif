@@ -9,245 +9,227 @@
 </head>
 <body>
   <div class="screen" id="screen0">
-    <div class="moon"></div>
+    <div class="rose-main">
+      <div class="rose-petal p1"></div>
+      <div class="rose-petal p2"></div>
+      <div class="rose-petal p3"></div>
+      <div class="rose-petal p4"></div>
+      <div class="rose-petal p5"></div>
+      <div class="rose-petal p6"></div>
+      <div class="rose-inner"></div>
+    </div>
     <p class="landing-text">if the moon could talk</p>
 
-    <!-- skip to (plain text at bottom) -->
     <div class="skip-toggle" id="skipToggle" tabindex="0" role="button" aria-expanded="false" aria-controls="skipPanel">
       skip to
     </div>
-
-    <!-- animated dropdown panel with all poem lines -->
     <div class="skip-panel" id="skipPanel" aria-hidden="true"></div>
   </div>
 
-  <!-- screens 1 to 24 -->
-  <div class="screen hidden" id="screen1"><p class="text">it would tell you...</p></div>
-  <div class="screen hidden" id="screen2"><p class="text">ke mein tumhe chaand keh doun <br> ye toh mumkin hai</br> </p></div>
-  <div class="screen hidden" id="screen3"><p class="text">magar loug tumhe <br> raat bhar dekhein </br> </p></div>
-  <div class="screen hidden" id="screen4"><p class="text">ye mujhay gawara nahi </p></div>
-  <div class="screen hidden" id="screen5"><p class="text">kahan se laaun wo lafz <br> jo tujay sunai dein </br> </p></div>
-  <div class="screen hidden" id="screen6"><p class="text">duniya dekhay chand ko per </p></div>
-  <div class="screen hidden" id="screen7"><p class="text">mujhay toh sirf tu dikhai dey</p></div>
-  <div class="screen hidden" id="screen8"><p class="text">tum mere saath hogi toh <br> kya kahega zamana </br> </p></div>
-  <div class="screen hidden" id="screen9"><p class="text">meri yehi ek tamman'ah hai <br> tera yehi ek bahana hai </br> </p></div>
-  <div class="screen hidden" id="screen10"><p class="text">tumhare chehre ki chamak <br> ke samne saada laga </br> </p></div>
-  <div class="screen hidden" id="screen11"><p class="text">aasmaan mein chaand poora tha <br> magar aadha laga </br></p></div>
-  <div class="screen hidden" id="screen12"><p class="text">har din tera deedar hou <br> phir chahay dukh hazaar hon </br> </p></div>
-  <div class="screen hidden" id="screen13"><p class="text">chaar din ki zindagani <br> aur beet rahe hein din </br> </p></div>
-  <div class="screen hidden" id="screen14"><p class="text">dou beetay tere milne se phele <br> aur dou beetay tere bin </br> </p></div>
-  <div class="screen hidden" id="screen15"><p class="text">sab hasratoon ko meri araam ageya</p></div>
-  <div class="screen hidden" id="screen16"><p class="text">teray aashiqon mein mera bhi naam ageya </p></div>
-  <div class="screen hidden" id="screen17"><p class="text">tum bilkul chaand ki tarhan ho</p></div>
-  <div class="screen hidden" id="screen18"><p class="text">door bhi <br> noor bhi </br> aur ghuroor bhi </p></div>
-  <div class="screen hidden" id="screen19"><p class="text">jisko mili ho tum <br> mujay uski hatheli dekhni hai </br> </p></div>
-  <div class="screen hidden" id="screen20"><p class="text">kaisi hoti hai wo lakeer <br> jo mere haathon mein nahi hai </br> </p></div>
-  <div class="screen hidden" id="screen21"><p class="text">meri takleef ki waja tum nahi ho. <br> takleef ki wajah ye hai ke tum nahi ho </br> </p></div>
-  <div class="screen hidden" id="screen22"><p class="text">tujhay le kar mera khayal nahi badlega</p></div>
-  <div class="screen hidden" id="screen23"><p class="text">saal badlega</p></div>
-  <div class="screen hidden" id="screen24"><p class="text">lekin mere dil ka haal nahi badlega</p></div>
-  <div class="screen hidden" id="screen25"><p class="text">dil na umeed toh nahi, nakaam hi toh hai <br> lambi hai ghum ki sham </br> magar sham hi toh</p></div>
-  <div class="screen hidden" id="screen26"><p class="text">kis liye dekhti ho tum aaina?</p></div>
-  <div class="screen hidden" id="screen27"><p class="text">tum toh khud se bhi zyada khoobsurat ho</p></div>
-  <div class="screen hidden" id="screen28"><p class="text">mujay ab tumse dar lagne laga hai..</p></div>
-  <div class="screen hidden" id="screen29"><p class="text">tumhe mujse mohobbat hogai hai kya?</p></div>
-  <div class="screen hidden" id="screen30"><p class="text">kitne aish se rehte hongay <br> kitna itraarate hongey</p></div>
-  <div class="screen hidden" id="screen31"><p class="text">jo bhi loug tumhare sath waqt bitatay honge</p></div>
-  <div class="screen hidden" id="screen32"><p class="text">shart aaj bhi wohi hai <br> ya mehboob ya mohobbat <br></p></div>
-  <div class="screen hidden" id="screen33"><p class="text">All this</p></div>
-  <div class="screen hidden" id="screen34"><p class="text">I did without you</p></div>
-  <div class="screen hidden" id="screen35"><p class="text">This was my loss</p></div>
-  <div class="screen hidden" id="screen36"><p class="text">All this <br> I want to do with you </br> </p></div>
-  <div class="screen hidden" id="screen37"><p class="text">This will be my gain</p></div>
-  <div class="screen hidden" id="screen38"><p class="text">All this</p></div>
-  <div class="screen hidden" id="screen39"><p class="text">I would gladly have forgone </p></div>
-  <div class="screen hidden" id="screen40"><p class="text">For the sake of one minute <br>of your company</br> </p></div>
-  <div class="screen hidden" id="screen41"><p class="text">For your laugh</p></div>
-  <div class="screen hidden" id="screen42"><p class="text">Your voice</p></div>
-  <div class="screen hidden" id="screen43"><p class="text">Your eyes</p></div>
-  <div class="screen hidden" id="screen44"><p class="text">hair..</p></div>
-  <div class="screen hidden" id="screen45"><p class="text">lips, body</p></div>
-  <div class="screen hidden" id="screen46"><p class="text">And above all for your sweet <br>ever-surprising mind</br> </p></div>
-  <div class="screen hidden" id="screen47"><p class="text">which is an enchanting quarry</p></div>
-  <div class="screen hidden" id="screen48"><p class="text">In which it is my privilege</p></div>
-  <div class="screen hidden" id="screen49"><p class="text">To Delve..</p></div>
-  <div class="screen hidden" id="screen50"><p class="text">main likhta hoon sab tere liye</p></div>
-  <div class="screen hidden" id="screen51"><p class="text">lekin darta hoon tere agay parhne se</p></div>
-  <div class="screen hidden" id="screen52"><p class="text">someone told me if she is important to you, let her read this</p></div>
-  <div class="screen hidden" id="screen53"><p class="text">so here goes</p></div>
-  <div class="screen hidden" id="screen54"><p class="text">You don't need a dress to be a princess</p></div>
-  <div class="screen hidden" id="screen55"><p class="text">You don't need a crown to be a queen</p></div>
-  <div class="screen hidden" id="screen56"><p class="text">You don't need a gentleman to be a lady</p></div>
-  <div class="screen hidden" id="screen57"><p class="text">All you need is</p></div>
-  <div class="screen hidden" id="screen58"><p class="text">Yourself</p></div>
-  <div class="screen hidden" id="screen59"><p class="text">To be a Princess..</p></div>
-  <div class="screen hidden" id="screen60"><p class="text">A Queen and</p></div>
-  <div class="screen hidden" id="screen61"><p class="text">and a Lady</p></div>
-  <div class="screen hidden" id="screen62"><p class="text">mujse pheli si mohobbat mere mehboob na mang</p></div>
-  <div class="screen hidden" id="screen63"><p class="text">maine samjha tha ke tu hai toh</p></div>
-  <div class="screen hidden" id="screen64"><p class="text">darakshan hai hayat</p></div>
-  <div class="screen hidden" id="screen65"><p class="text">tera ghum hai toh</p></div>
-  <div class="screen hidden" id="screen66"><p class="text">ghum-e-dahr ka jhagda kya hai</p></div>
-  <div class="screen hidden" id="screen67"><p class="text">teri soorat se hai aalam mein bahaaron ko sabaat</p></div>
-  <div class="screen hidden" id="screen68"><p class="text">teri ankhoon ke siwa..</p></div>
-  <div class="screen hidden" id="screen69"><p class="text">duniya mein rakha hi kya hai?</p></div>
-  <div class="screen hidden" id="screen70"><p class="text">You are in my heart</p></div>
-  <div class="screen hidden" id="screen71"><p class="text">You shall be in there forever</p></div>
-  <div class="screen hidden" id="screen72"><p class="text">My greatest wish is that you are happy when</p></div>
-  <div class="screen hidden" id="screen73"><p class="text">You think of me</p></div>
-  <div class="screen hidden" id="screen74"><p class="text">I am. When I think of you</p></div>
-  <div class="screen hidden" id="screen75"><p class="text">I. must. be. with. you</p></div>
-  <div class="screen hidden" id="screen76"><p class="text">I want nothing else in this life than to be with you</p></div>
-  <div class="screen hidden" id="screen77"><p class="text">To listen and watch you</p></div>
-  <div class="screen hidden" id="screen78"><p class="text">Wouldn't it be wonderful to be together?</p></div>
-  <div class="screen hidden" id="screen79"><p class="text">Really really together</p></div>
-  <div class="screen hidden" id="screen80"><p class="text">The glory of YOU</p></div>
-  <div class="screen hidden" id="screen81"><p class="text">I cannot envisage a life without loving you</p></div>
-  <div class="screen hidden" id="screen82"><p class="text">With a depth and passion</p></div>
-  <div class="screen hidden" id="screen83"><p class="text">That I have felt for no one else in this life.</p></div>
-  <div class="screen hidden" id="screen84"><p class="text">I am glad that I know you</p></div>
-  <div class="screen hidden" id="screen85"><p class="text">I was not such an idiot as to believe this was possible</p></div>
-  <div class="screen hidden" id="screen86"><p class="text">yet in You, I found</p></div>
-  <div class="screen hidden" id="screen87"><p class="text">Everything I want</p></div>
-  <div class="screen hidden" id="screen88"><p class="text">You are beautiful</p></div>
-  <div class="screen hidden" id="screen89"><p class="text">Caring</p></div>
-  <div class="screen hidden" id="screen90"><p class="text">Giving</p></div>
-  <div class="screen hidden" id="screen91"><p class="text">Gentle</p></div>
-  <div class="screen hidden" id="screen92"><p class="text">Idiotically and</p></div>
-  <div class="screen hidden" id="screen93"><p class="text">Deliciously feminine</p></div>
-  <div class="screen hidden" id="screen94"><p class="text">Sexy, wonderfully intelligent</p></div>
-  <div class="screen hidden" id="screen95"><p class="text">And wonderfully silly as well</p></div>
-  <div class="screen hidden" id="screen96"><p class="text">I want nothing else in this life than to be with you</p></div>
-  <div class="screen hidden" id="screen97"><p class="text">To listen and watch you</p></div>
-  <div class="screen hidden" id="screen98"><p class="text">Your beautiful voice, you beauty</p></div>
-  <div class="screen hidden" id="screen99"><p class="text">To argue with you, To laugh with you</p></div>
-  <div class="screen hidden" id="screen100"><p class="text">To show you things and share things with you</p></div>
-  <div class="screen hidden" id="screen101"><p class="text">To explore your magnificent mind</p></div>
-  <div class="screen hidden" id="screen102"><p class="text">To help you, protect you, serve you and</p></div>
-  <div class="screen hidden" id="screen103"><p class="text">Bash you on the head when I think you are wrong</p></div>
-  <div class="screen hidden" id="screen104"><p class="text">Not to brag but I consider myself as the only man outside mythology</p></div>
-  <div class="screen hidden" id="screen105"><p class="text">To have found the crock of gold at the rainbow's end.</p></div>
-  <div class="screen hidden" id="screen106"><p class="text">janay iss waqt tum kahan hogi</p></div>
-  <div class="screen hidden" id="screen107"><p class="text">main nahi hoon jahan, <br>wahan hogi</br></p></div>
-  <div class="screen hidden" id="screen108"><p class="text">tamannah phir machal jaye <br>agar tum milne aajao</br> </p></div>
-  <div class="screen hidden" id="screen109"><p class="text">haan ye mausam bhi badal jaye <br>agar tum milne aajao</br> </p></div>
-  <div class="screen hidden" id="screen110"><p class="text">nahi milti ho tum mere se toh<br> sab humdard hain mere</br> </p></div>
-  <div class="screen hidden" id="screen111"><p class="text">zamana mujse jal jaye <br>agar tum milne aajao..</br> </p></div>
-  <div class="screen hidden" id="screen112"><p class="text">Ye ghar ab khali kyun hai? tu rehti kyun nahi?</p></div>
-  <div class="screen hidden" id="screen113"><p class="text">darwaza khula hai, tum andar bethi kyun nahi</p></div>
-<div class="screen hidden" id="screen114"><p class="text">Nahi pasand mere se baat karna? toh mujay kheti kyun nahi</p></div>
-  <div class="screen hidden" id="screen115"><p class="text">khenchi hain tasveerein? mujhay bheji kyun nahi?</p></div>
-  <div class="screen hidden" id="screen116"><p class="text">Ab toh ghariyan bhi hogai hain kharab tere intezaaron mein</p></div>
-<div class="screen hidden" id="screen117"><p class="text">Tu sab se haseen, lagay na pariyon mein dil</p></div>
-  <div class="screen hidden" id="screen118"><p class="text">Tum mere Aqal-o-Shaoor mein samjh main hon</p></div>
-  <div class="screen hidden" id="screen119"><p class="text">Tum baad-e-sabah hou, fajar main hou</p></div>
-  <div class="screen hidden" id="screen120"><p class="text">Mashoor-e-Zamana nazar main ho.</p></div>
-  <div class="screen hidden" id="screen121"><p class="text">Tumhara naqsha aasmani hai, <br> kya tum hoor-woor bhi ho? </br> </p></div>
-    <div class="screen hidden" id="screen122"><p class="text">Ab tu ghabraye, jhelne nahi aur yeh sitam </p></div>
-    <div class="screen hidden" id="screen123"><p class="text">Jaise utar gaye teri saari diwaaron se rung, <br> Jaise khaa raha ho tere saaray zewaron ko zung <br> </p></div>
-<div class="screen hidden" id="screen124"><p class="text">Jaise cheen liye kisi ne uss morni ke pankh</p></div>
-  <div class="screen hidden" id="screen125"><p class="text">You'll stick it out til the end, <br> lagta hai bore hogayi ho </br> </p></div>
-  <div class="screen hidden" id="screen126"><p class="text">Tum khayal kyun nahi rakhti ho, kamzoor hogayi ho </p></div>
-  <div class="screen hidden" id="screen127"><p class="text">Aur kya dekhna baki hai <br> Ap se dil laga ke dekh liya </br> </p></div>
-<div class="screen hidden" id="screen128"><p class="text">zindagi se yehi gila hai mujay, <br> tu bari deir se mila hai mujhay </br> </p></div>
-  <div class="screen hidden" id="screen129"><p class="text"> shayad kisi ne tumse pocha nahi hoga, <br> main hi poch leta hoon </br> </p></div>
-    <div class="screen hidden" id="screen130"><p class="text"> Khush ho tum? </p></div>
-    <div class="screen hidden" id="screen131"><p class="text">mein dhoondun tera naim-o-badal <br> Ke dikh jaye tujhsi shakal </br> </p></div>
-    <div class="screen hidden" id="screen132"><p class="text"> ke jaaun kisi tarah sambhal <br> mere vehm-o-gumaan main bhi jou naa ho, mil jaye phal </p></div>
-    <div class="screen hidden" id="screen133"><p class="text"> mein sochun tera zikar yun karun <br> ke mein ek aur likh bethun tujhpe ghazal </p></div>
-    <div class="screen hidden" id="screen134"><p class="text"> Meri jaan, tum ghalat nahi ho <br> Kaise jhutlaun lat nahi ho? </br> </p></div>
-    <div class="screen hidden" id="screen135"><p class="text"> mere liye tum sabaq nahi ho </p></div>
-    <div class="screen hidden" id="screen136"><p class="text"> tum mujhe awaaz dena </p></div>
-    <div class="screen hidden" id="screen137"><p class="text"> jab raat yeh kuch batane lage </p></div>
-    <div class="screen hidden" id="screen138"><p class="text"> tanhayi bhi khaanay lage <br> jab dard bhi hasanay lage </br> </p></div>
-    <div class="screen hidden" id="screen139"><p class="text"> Tou mujhe yaad karna <br> aur phir apne chehre pe muskarahat dekhna </p></div>
-    <div class="screen hidden" id="screen140"><p class="text"> main kya likhta hoon? <br> tum kya parhti ho? </p></div>
-      <div class="screen hidden" id="screen141"><p class="text"> mauzu-e-guftagu gayi ab <br> hum se baatein nahein hoti </p></div>
-    <div class="screen hidden" id="screen142"><p class="text"> qaid bethay ghar mein  <br> mulaqaatein nahein hoti </p></div>
-      <div class="screen hidden" id="screen143"><p class="text"> suraj dhal chuka hai phir bhi  <br> kyun ab raatein nahein hoti? </p></div>
-        <div class="screen hidden" id="screen144"><p class="text"> Bagh mein hain phool <br> titli bas ati he bas hogi  </p></div>
-    <div class="screen hidden" id="screen145"><p class="text"> zindagi thaakan toh <br> tum aaram hogai ho </p></div>
-    <div class="screen hidden" id="screen146"><p class="text"> nibhaana hi toh mushkil hai <br> chahna toh har kisi ko ata hai </p></div>
-    <div class="screen hidden" id="screen147"><p class="text"> I will search for you </p></div>
-      <div class="screen hidden" id="screen148"><p class="text"> Through a Thousand worlds  </p></div>
-        <div class="screen hidden" id="screen149"><p class="text">  And 10 Thousand lifetimes  </p></div>
-        <div class="screen hidden" id="screen150"><p class="text"> Until I find you  </p></div>
-    <div class="screen hidden" id="screen151"><p class="text"> mere haathon se mehak aati hai din bhar, <br> raat khuwaabon mein tere baal sawaare thay </br> </p></div>
-    <div class="screen hidden" id="screen152"><p class="text"> mein khud ko tujh per mukammal karta hon <br> tum wo pheli ho jo mujay akhri lagti ho </br> </p></div>
-    <div class="screen hidden" id="screen153"><p class="text"> yaad ayegi har roz magar tujhay awaaz nahi dounga <br> likunga har shayari tere liye </br> </p></div>
-    <div class="screen hidden" id="screen154"><p class="text">lekin tera naam nahi lounga  </p></div>
-    <div class="screen hidden" id="screen156"><p class="text"> kajal laga le ek dafa, <br> ek dafa wo uljhay baal, suljha le </br> </p></div>
-      <div class="screen hidden" id="screen157"><p class="text"> ye zamanna apna rukh na badalde <br> har koi uske saath na chalde </br> </p></div>
-    <div class="screen hidden" id="screen158"><p class="text"> ye hawaaiyein ruk na jayen <br> usey dekhne ko kahin </br> </p></div>
-    <div class="screen hidden" id="screen159"><p class="text"> meine jabse se dekha hai usko </p></div>
-      <div class="screen hidden" id="screen160"><p class="text"> main hoon wahin.. </p></div>
-        <div class="screen hidden" id="screen161"><p class="text"> when I die, plant flowers over my grave </p></div>
-      <div class="screen hidden" id="screen162"><p class="text"> so no matter how many seasons pass </p></div>
-      <div class="screen hidden" id="screen163"><p class="text"> there will always be a way for you to hold me again. </p></div>
-      <div class="screen hidden" id="screen164"><p class="text"> Waqt tham geya hai jaise alvida ho tum </p></div>
-      <div class="screen hidden" id="screen165"><p class="text"> Kabhi jaan keh diya, <br> Kabhi anjaan kheh diya </br> </p></div>
-        <div class="screen hidden" id="screen166"><p class="text"> Zarf dekh mera, </p></div>
-      <div class="screen hidden" id="screen167"><p class="text"> pathar ko insaan keh diya.. </p></div>
-      <div class="screen hidden" id="screen168"><p class="text"> Kya baataon uss shehar ka tujhko </p></div>
-      <div class="screen hidden" id="screen169"><p class="text"> koi louta hi nahi ab tak wahan se mera.. </br> </p></div>
-      <div class="screen hidden" id="screen170"><p class="text"> Toh arz karte hein phir sey apke liye </p></div>
-      <div class="screen hidden" id="screen171"><p class="text"> Main na sunu toh <br> ghussay mein aati hai </br> </p></div>
-      <div class="screen hidden" id="screen172"><p class="text"> Main sun loon toh, <br> Muskurati hai </br> </p></div>
-      <div class="screen hidden" id="screen173"><p class="text"> Main udaas hoon, <br> toh samjhati hai </br> </p></div>
-      <div class="screen hidden" id="screen174"><p class="text"> Main khafa hoon toh, <br> nahi mujhay manati hai </br> </p></div>
-      <div class="screen hidden" id="screen175"><p class="text"> Meri nakamiyaabiyon par <br> apna haq jatati hai </br> </p></div>
-      <div class="screen hidden" id="screen176"><p class="text"> thori shookhi hoti hai, <br> lekin phir theek hojati hai </br> </p></div>
-      <div class="screen hidden" id="screen177"><p class="text"> Main pareshaan na karun toh, <br> khud pareshan hojati hai </br> </p></div>
-      <div class="screen hidden" id="screen178"><p class="text"> Itni tilishmani ho kar bhi, <br> wo mujhay apna dost manti hai </br> </p></div>
-      <div class="screen hidden" id="screen179"><p class="text"> Ek larki hai jo mujhay.. </p></div>
-        <div class="screen hidden" id="screen180"><p class="text"> Mujse.. <br> zyada jaanti hai </br> </p></div>
-          <div class="screen hidden" id="screen181"><p class="text"> If anything, <br> You're everything </br> </p></div>
-  <div class="screen hidden" id="screen182"><p class="text"> Mila kyun nahi sabar ka fal, <br> Jhoote munh hi sahi, haal poocha kar</br> </p></div>
-  <div class="screen hidden" id="screen183"><p class="text"> Kuch pal hain haseen <br> Jis pal mein ho tum </br> </p></div>
-  <div class="screen hidden" id="screen184"><p class="text"> Tum aaj mili nahi, <br> shayad kal main ho tum </br> </p></div>
-    <div class="screen hidden" id="screen185"><p class="text"> Aabaad wo ghar, <br> jis ghar mein ho tum </br> </p></div>
-  <div class="screen hidden" id="screen186"><p class="text"> Door hoke bhi nazar mein ho tum </p></div>
-  <div class="screen hidden" id="screen187"><p class="text"> Badal gayi ho tum, badal gaya main </p></div>
-      <div class="screen hidden" id="screen188"><p class="text"> Baat kyun nahi karti ho, <br> pas mein betha hai koi? </br> </p></div>
-      <div class="screen hidden" id="screen189"><p class="text"> kabhi kabhi sahi lekin <br> humein yaad toh kar </br> </p></div>
-      <div class="screen hidden" id="screen190"><p class="text"> chirr ke hi sahi lekin <br> kabhi baat toh kar </br> </p></div>
-        <div class="screen hidden" id="screen191"><p class="text"> main nahi teri jaan lekin <br> thora raabta toh kar </br> </p></div>
-          <div class="screen hidden" id="screen192"><p class="text"> Chashma pehen ke bhi, <br> mera pyar nazar nahi ata andhi? </br> </p></div>
-        <div class="screen hidden" id="screen193"><p class="text"> I want to say "I want you" <br> but.. </br> </p></div>
-        <div class="screen hidden" id="screen194"><p class="text"> Dostoevsky helps me in saying this instead </p></div>
-        <div class="screen hidden" id="screen195"><p class="text"> If being with you is a mistake <br> then let be wrong for the rest of my life </br> </p></div>
-        <div class="screen hidden" id="screen196"><p class="text"> Let the world condemn me <br> and let that sentence be Eternal </br> </p></div>
-        <div class="screen hidden" id="screen197"><p class="text"> I would rather walk blind <br> into the underworld </br> </p></div>
-          <div class="screen hidden" id="screen198"><p class="text"> than see clearly <br> in a world without You </br> </p></div>
-        <div class="screen hidden" id="screen199"><p class="text"> And though the soul may fracture </p></div>
-        <div class="screen hidden" id="screen200"><p class="text"> under the weight of such madness </p></div>
-        <div class="screen hidden" id="screen201"><p class="text"> in your presence, <br> even ruin tastes like </br> </p></div>
-          <div class="screen hidden" id="screen202"><p class="text"> strawberries.. </p></div>
-        <div class="screen hidden" id="screen203"><p class="text"> Taqdeer mein tum se milna likha tha, <br>tumhara milna nahi </br> </p></div>
+  <div class="screen hidden" id="screen9"><p class="text">it would tell you</p></div>
+  <div class="screen hidden" id="screen10"><p class="text">that your eyes carry a world of their own</p></div>
+  <div class="screen hidden" id="screen11"><p class="text">I hope you know how breathtaking you are</p></div>
+  <div class="screen hidden" id="screen12"><p class="text">not just to look at</p></div>
+  <div class="screen hidden" id="screen13"><p class="text">but to simply be near</p></div>
+  <div class="screen hidden" id="screen14"><p class="text">you are my favorite thought</p></div>
+  <div class="screen hidden" id="screen15"><p class="text">and my most beautiful reality</p></div>
+  <div class="screen hidden" id="screen16"><p class="text">your heart is a masterpiece</p></div>
+  <div class="screen hidden" id="screen17"><p class="text">and I am so lucky to witness it</p></div>
+  <div class="screen hidden" id="screen18"><p class="text">don't ever forget your worth</p></div>
+  <div class="screen hidden" id="screen19"><p class="text">because to me...</p></div>
+  <div class="screen hidden" id="screen20"><p class="text">you are everything.</p></div>
+  <div class="screen hidden" id="screen21"><p class="text">sometimes I just stop and watch you</p></div>
+  <div class="screen hidden" id="screen22"><p class="text">and I wonder how I got so lucky</p></div>
+  <div class="screen hidden" id="screen23"><p class="text">to be the one who gets to know you</p></div>
+  <div class="screen hidden" id="screen24"><p class="text">to be the one who gets to hear your voice</p></div>
+  <div class="screen hidden" id="screen25"><p class="text">you have this light about you</p></div>
+  <div class="screen hidden" id="screen26"><p class="text">that makes the dark days feel small</p></div>
+  <div class="screen hidden" id="screen27"><p class="text">it’s not just your face</p></div>
+  <div class="screen hidden" id="screen28"><p class="text">though that is perfection too</p></div>
+  <div class="screen hidden" id="screen29"><p class="text">it’s the kindness in your voice</p></div>
+  <div class="screen hidden" id="screen30"><p class="text">and the way you care for people</p></div>
+  <div class="screen hidden" id="screen31"><p class="text">you are a rare kind of soul</p></div>
+  <div class="screen hidden" id="screen32"><p class="text">the kind people write poems about</p></div>
+  <div class="screen hidden" id="screen33"><p class="text">the kind people search for their whole lives</p></div>
+  <div class="screen hidden" id="screen34"><p class="text">and I found you</p></div>
+  <div class="screen hidden" id="screen35"><p class="text">or maybe you found me</p></div>
+  <div class="screen hidden" id="screen36"><p class="text">either way, it’s the best thing that ever happened</p></div>
+  <div class="screen hidden" id="screen37"><p class="text">you are my home</p></div>
+  <div class="screen hidden" id="screen38"><p class="text">my peace</p></div>
+  <div class="screen hidden" id="screen39"><p class="text">and my greatest adventure</p></div>
+  <div class="screen hidden" id="screen40"><p class="text">I see so much in you</p></div>
+  
+  <div class="screen hidden" id="screen41"><p class="text">even on the days you feel tired</p></div>
+  <div class="screen hidden" id="screen42"><p class="text">you are still radiant</p></div>
+  <div class="screen hidden" id="screen43"><p class="text">even when you don't feel like "enough"</p></div>
+  <div class="screen hidden" id="screen44"><p class="text">you are more than I ever dreamed of</p></div>
+  <div class="screen hidden" id="screen45"><p class="text">I love the way you laugh</p></div>
+  <div class="screen hidden" id="screen46"><p class="text">it's my favorite sound in the world</p></div>
+  <div class="screen hidden" id="screen47"><p class="text">and I love the way you listen</p></div>
+  <div class="screen hidden" id="screen48"><p class="text">making me feel like the only person on earth</p></div>
+  <div class="screen hidden" id="screen49"><p class="text">you are important to so many</p></div>
+  <div class="screen hidden" id="screen50"><p class="text">but you are essential to me</p></div>
+  <div class="screen hidden" id="screen51"><p class="text">you have a way of healing things</p></div>
+  <div class="screen hidden" id="screen52"><p class="text">just by being yourself</p></div>
+  <div class="screen hidden" id="screen53"><p class="text">your mind is so incredibly beautiful</p></div>
+  <div class="screen hidden" id="screen54"><p class="text">the way you see the world</p></div>
+  <div class="screen hidden" id="screen55"><p class="text">the way you challenge me to be better</p></div>
+  <div class="screen hidden" id="screen56"><p class="text">I’m in awe of you, honestly</p></div>
+  <div class="screen hidden" id="screen57"><p class="text">every single day</p></div>
+  <div class="screen hidden" id="screen58"><p class="text">you don't have to be perfect for me</p></div>
+  <div class="screen hidden" id="screen59"><p class="text">because your "imperfect" is my favorite</p></div>
+  <div class="screen hidden" id="screen60"><p class="text">your messiness is art</p></div>
+  <div class="screen hidden" id="screen61"><p class="text">your quiet moments are sacred</p></div>
+  <div class="screen hidden" id="screen62"><p class="text">I want to know every version of you</p></div>
+  <div class="screen hidden" id="screen63"><p class="text">the happy you, the sad you</p></div>
+  <div class="screen hidden" id="screen64"><p class="text">the you that is excited about small things</p></div>
+  <div class="screen hidden" id="screen65"><p class="text">and the you that is scared of the big things</p></div>
+  <div class="screen hidden" id="screen66"><p class="text">I will hold space for all of it</p></div>
+  <div class="screen hidden" id="screen67"><p class="text">I will hold you through all of it</p></div>
+  <div class="screen hidden" id="screen68"><p class="text">you are not a burden</p></div>
+  <div class="screen hidden" id="screen69"><p class="text">you are a gift</p></div>
+  <div class="screen hidden" id="screen70"><p class="text">a literal miracle</p></div>
+  <div class="screen hidden" id="screen71"><p class="text">do you have any idea?</p></div>
+  <div class="screen hidden" id="screen72"><p class="text">how much the world needs your heart?</p></div>
+  <div class="screen hidden" id="screen73"><p class="text">how much I need your heart?</p></div>
+  <div class="screen hidden" id="screen74"><p class="text">you are the sun in my sky</p></div>
+  <div class="screen hidden" id="screen75"><p class="text">the gravity that keeps me grounded</p></div>
+  <div class="screen hidden" id="screen76"><p class="text">I’d choose you in every lifetime</p></div>
+  <div class="screen hidden" id="screen77"><p class="text">in every universe</p></div>
+  <div class="screen hidden" id="screen78"><p class="text">in every version of reality</p></div>
+  <div class="screen hidden" id="screen79"><p class="text">it would always be you</p></div>
+  <div class="screen hidden" id="screen80"><p class="text">always.</p></div>
+  
+  <div class="screen hidden" id="screen81"><p class="text">I love the little things...</p></div>
+  <div class="screen hidden" id="screen82"><p class="text">the way your hands would fit in mine</p></div>
+  <div class="screen hidden" id="screen83"><p class="text">the way you'll look when you're asleep</p></div>
+  <div class="screen hidden" id="screen84"><p class="text">so peaceful and safe</p></div>
+  <div class="screen hidden" id="screen85"><p class="text">I love your style</p></div>
+  <div class="screen hidden" id="screen86"><p class="text">but I love your essence more</p></div>
+  <div class="screen hidden" id="screen87"><p class="text">you make everything better</p></div>
+  <div class="screen hidden" id="screen88"><p class="text">you are a gem</p></div>
+  <div class="screen hidden" id="screen89"><p class="text">everything is more fun with you</p></div>
+  <div class="screen hidden" id="screen90"><p class="text">silence is more comfortable with you</p></div>
+  <div class="screen hidden" id="screen91"><p class="text">you have this magic...</p></div>
+  <div class="screen hidden" id="screen92"><p class="text">it's hard to put into words</p></div>
+  <div class="screen hidden" id="screen93"><p class="text">but I feel it every time we talk</p></div>
+  <div class="screen hidden" id="screen94"><p class="text">you are my favorite place to be</p></div>
+  <div class="screen hidden" id="screen95"><p class="text">your love is a sanctuary</p></div>
+  <div class="screen hidden" id="screen96"><p class="text">and I promise to protect it</p></div>
+  <div class="screen hidden" id="screen97"><p class="text">I promise to cherish you</p></div>
+  <div class="screen hidden" id="screen98"><p class="text">not just today</p></div>
+  <div class="screen hidden" id="screen99"><p class="text">but every single morning I wake up</p></div>
+  <div class="screen hidden" id="screen100"><p class="text">we’re halfway through this list...</p></div>
+  <div class="screen hidden" id="screen101"><p class="text">and I haven't even scratched the surface</p></div>
+  <div class="screen hidden" id="screen102"><p class="text">of how incredible you are</p></div>
+  <div class="screen hidden" id="screen103"><p class="text">you are smart</p></div>
+  <div class="screen hidden" id="screen104"><p class="text">you are resilient</p></div>
+  <div class="screen hidden" id="screen105"><p class="text">you are stronger than you know</p></div>
+  <div class="screen hidden" id="screen106"><p class="text">the things you’ve overcome...</p></div>
+  <div class="screen hidden" id="screen107"><p class="text">they only made you more beautiful</p></div>
+  <div class="screen hidden" id="screen108"><p class="text">like gold filling the cracks in porcelain</p></div>
+  <div class="screen hidden" id="screen109"><p class="text">you are kintsugi</p></div>
+  <div class="screen hidden" id="screen110"><p class="text">valuable because of your journey</p></div>
+  <div class="screen hidden" id="screen111"><p class="text">I admire your heart so much</p></div>
+  <div class="screen hidden" id="screen112"><p class="text">it’s so big and wide</p></div>
+  <div class="screen hidden" id="screen113"><p class="text">there is room for everyone in it</p></div>
+  <div class="screen hidden" id="screen114"><p class="text">thank you for letting me in</p></div>
+  <div class="screen hidden" id="screen115"><p class="text">thank you for choosing me</p></div>
+  <div class="screen hidden" id="screen116"><p class="text">I’ll never take it for granted</p></div>
+  <div class="screen hidden" id="screen117"><p class="text">I’ll never stop trying to win you over</p></div>
+  <div class="screen hidden" id="screen118"><p class="text">even when you’re already mine</p></div>
+  <div class="screen hidden" id="screen119"><p class="text">I’ll still date you</p></div>
+  <div class="screen hidden" id="screen120"><p class="text">I’ll still chase you</p></div>
+  
+  <div class="screen hidden" id="screen121"><p class="text">I want to grow old with you</p></div>
+  <div class="screen hidden" id="screen122"><p class="text">I want to see the wrinkles around your eyes</p></div>
+  <div class="screen hidden" id="screen123"><p class="text">because they will be from years of laughing together</p></div>
+  <div class="screen hidden" id="screen124"><p class="text">I want to hold your hand when we’re 80</p></div>
+  <div class="screen hidden" id="screen125"><p class="text">and still feel the same spark</p></div>
+  <div class="screen hidden" id="screen126"><p class="text">because you are timeless</p></div>
+  <div class="screen hidden" id="screen127"><p class="text">your beauty doesn't fade</p></div>
+  <div class="screen hidden" id="screen128"><p class="text">it just evolves</p></div>
+  <div class="screen hidden" id="screen129"><p class="text">you are like a sunset</p></div>
+  <div class="screen hidden" id="screen130"><p class="text">getting more vibrant as time goes on</p></div>
+  <div class="screen hidden" id="screen131"><p class="text">thank you for being my person</p></div>
+  <div class="screen hidden" id="screen132"><p class="text">for being my best friend</p></div>
+  <div class="screen hidden" id="screen133"><p class="text">for being the person I want to tell everything to</p></div>
+  <div class="screen hidden" id="screen134"><p class="text">when something good happens, I look for you</p></div>
+  <div class="screen hidden" id="screen135"><p class="text">when something bad happens, I look for you</p></div>
+  <div class="screen hidden" id="screen136"><p class="text">you are my "center"</p></div>
+  <div class="screen hidden" id="screen137"><p class="text">and I hope I am yours too</p></div>
+  <div class="screen hidden" id="screen138"><p class="text">I promise to always listen</p></div>
+  <div class="screen hidden" id="screen139"><p class="text">even to the things you don't say</p></div>
+  <div class="screen hidden" id="screen140"><p class="text">I promise to be your biggest fan</p></div>
+  <div class="screen hidden" id="screen141"><p class="text">clapping the loudest for your wins</p></div>
+  <div class="screen hidden" id="screen142"><p class="text">and I’ll be the one holding the safety net</p></div>
+  <div class="screen hidden" id="screen143"><p class="text">if you ever fall</p></div>
+  <div class="screen hidden" id="screen144"><p class="text">you are so brave</p></div>
+  <div class="screen hidden" id="screen145"><p class="text">braver than you think</p></div>
+  <div class="screen hidden" id="screen146"><p class="text">I see how hard you work</p></div>
+  <div class="screen hidden" id="screen147"><p class="text">I see how much you give of yourself</p></div>
+  <div class="screen hidden" id="screen148"><p class="text">please remember to give to yourself too</p></div>
+  <div class="screen hidden" id="screen149"><p class="text">you deserve the same love you give away</p></div>
+  <div class="screen hidden" id="screen150"><p class="text">you deserve the world</p></div>
+  <div class="screen hidden" id="screen151"><p class="text">and I’ll try my best to give it to you</p></div>
+  <div class="screen hidden" id="screen152"><p class="text">screen by screen</p></div>
+  <div class="screen hidden" id="screen153"><p class="text">day by day</p></div>
+  <div class="screen hidden" id="screen154"><p class="text">moment by moment</p></div>
+  <div class="screen hidden" id="screen155"><p class="text">I am so proud of you</p></div>
+  <div class="screen hidden" id="screen156"><p class="text">for just being who you are</p></div>
+  <div class="screen hidden" id="screen157"><p class="text">you don't need to do anything to earn my love</p></div>
+  <div class="screen hidden" id="screen158"><p class="text">it is already yours</p></div>
+  <div class="screen hidden" id="screen159"><p class="text">completely.</p></div>
+  <div class="screen hidden" id="screen160"><p class="text">unconditionally.</p></div>
+  
+  <div class="screen hidden" id="screen161"><p class="text">we’re getting close to the end</p></div>
+  <div class="screen hidden" id="screen162"><p class="text">but my love for you has no end</p></div>
+  <div class="screen hidden" id="screen163"><p class="text">it’s a circle</p></div>
+  <div class="screen hidden" id="screen164"><p class="text">it just keeps going back to you</p></div>
+  <div class="screen hidden" id="screen165"><p class="text">you are my North Star</p></div>
+  <div class="screen hidden" id="screen166"><p class="text">guiding me through everything</p></div>
+  <div class="screen hidden" id="screen167"><p class="text">I love your eyes</p></div>
+  <div class="screen hidden" id="screen168"><p class="text">I love the way you tuck your hair</p></div>
+  <div class="screen hidden" id="screen169"><p class="text">I love the way you say my name</p></div>
+  <div class="screen hidden" id="screen170"><p class="text">it sounds different when you say it</p></div>
+  <div class="screen hidden" id="screen171"><p class="text">it sounds like I belong somewhere</p></div>
+  <div class="screen hidden" id="screen172"><p class="text">you are the best part of my day</p></div>
+  <div class="screen hidden" id="screen173"><p class="text">the best part of my life</p></div>
+  <div class="screen hidden" id="screen174"><p class="text">I hope this made you smile</p></div>
+  <div class="screen hidden" id="screen175"><p class="text">because your smile is everything</p></div>
+  <div class="screen hidden" id="screen176"><p class="text">it can light up the darkest night</p></div>
+  <div class="screen hidden" id="screen177"><p class="text">never let anyone dim your light</p></div>
+  <div class="screen hidden" id="screen178"><p class="text">you are too bright for that</p></div>
+  <div class="screen hidden" id="screen179"><p class="text">too precious for that</p></div>
+  <div class="screen hidden" id="screen180"><p class="text">you are a queen</p></div>
+  <div class="screen hidden" id="screen181"><p class="text">and I am your biggest supporter</p></div>
+  <div class="screen hidden" id="screen182"><p class="text">if you ever feel small</p></div>
+  <div class="screen hidden" id="screen183"><p class="text">just come back to these words</p></div>
+  <div class="screen hidden" id="screen184"><p class="text">read them as many times as you need</p></div>
+  <div class="screen hidden" id="screen185"><p class="text">until you believe them</p></div>
+  <div class="screen hidden" id="screen186"><p class="text">because they are the truth</p></div>
+  <div class="screen hidden" id="screen187"><p class="text">my absolute truth</p></div>
+  <div class="screen hidden" id="screen188"><p class="text">you will forever be my home</p></div>
+  <div class="screen hidden" id="screen189"><p class="text">The place where I feel absolute calm</p></div>
+  <div class="screen hidden" id="screen190"><p class="text">You have an amazing soul, you don't even realize</p></div>
+  <div class="screen hidden" id="screen191"><p class="text">you are the complete package</p></div>
+  <div class="screen hidden" id="screen192"><p class="text">you are the dream I didn't know I had</p></div>
+  <div class="screen hidden" id="screen193"><p class="text">and now that you’re here</p></div>
+  <div class="screen hidden" id="screen194"><p class="text">I’m never letting go</p></div>
+  <div class="screen hidden" id="screen195"><p class="text">thank you for existing</p></div>
+  <div class="screen hidden" id="screen196"><p class="text">thank you for being you</p></div>
+  <div class="screen hidden" id="screen197"><p class="text">just you.</p></div>
+  <div class="screen hidden" id="screen198"><p class="text">forever and always.</p></div>
+  <div class="screen hidden" id="screen199"><p class="text">Just know that I won't ever leave honey...</p></div>
 
 
 
 
-  
-  <div class="screen hidden" id="screen204"> <p class="text"> click below to send an anonymous to the creator. <br> you can say anything and share anything </br> <br> <a href="https://ngl.link/ifthemooncouldtalk" target="_blank" style="color: white; text-decoration: none;">  <b> <i> if the moon could talk </i> </b> 
-</a> </p> </div>
-  
-  
-  
-  
-  
-  
-
-
-
-  
-
-  
+    <div class="skip-toggle" id="skipToggle" tabindex="0" role="button" aria-expanded="false" aria-controls="skipPanel">
+      skip to
+    </div>
+    <div class="skip-panel" id="skipPanel" aria-hidden="true"></div>
+  </div>
   <script src="script.js"></script>
-
-  
-
-
-
 </body>
 </html>
