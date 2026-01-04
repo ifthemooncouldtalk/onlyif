@@ -1,14 +1,21 @@
-// --- generate stars dynamically ---
 document.addEventListener("DOMContentLoaded", () => {
-  for (let i = 0; i < 100; i++) {
-    const star = document.createElement("div");
-    star.classList.add("star");
-    star.style.left = Math.random() * 100 + "vw";
-    star.style.top = Math.random() * 100 + "vh";
-    star.style.animationDuration = 5 + Math.random() * 10 + "s";
-    star.style.opacity = Math.random();
-    star.style.width = star.style.height = Math.random() * 2 + 1 + "px";
-    document.body.appendChild(star);
+  const roseColors = ['#8b0000', '#a52a2a', '#b22222', '#7b0000', '#5e0000'];
+  
+  // Generate falling rose petals
+  for (let i = 0; i < 60; i++) {
+    const petal = document.createElement("div");
+    petal.classList.add("rose-petal-falling");
+    petal.style.left = Math.random() * 100 + "vw";
+    petal.style.background = roseColors[Math.floor(Math.random() * roseColors.length)];
+    
+    const size = 15 + Math.random() * 10 + "px";
+    petal.style.width = size;
+    petal.style.height = (parseFloat(size) * 1.2) + "px";
+    
+    petal.style.animationDuration = 6 + Math.random() * 10 + "s";
+    petal.style.animationDelay = Math.random() * 15 + "s";
+    
+    document.body.appendChild(petal);
   }
 });
 
@@ -17,19 +24,11 @@ let currentScreen = 0;
 
 document.addEventListener("DOMContentLoaded", () => {
   showScreen(currentScreen);
-  initSkip(); // initialize skip panel
+  initSkip(); 
 });
 
-// click anywhere → next screen
 document.addEventListener("click", (e) => {
   if (!e.target.closest(".skip-toggle") && !e.target.closest(".skip-panel")) {
-    nextScreen();
-  }
-});
-
-// space/enter → next screen
-document.addEventListener("keydown", (e) => {
-  if (e.key === " " || e.key === "Enter") {
     nextScreen();
   }
 });
@@ -47,7 +46,7 @@ function showScreen(index) {
       const text = screen.querySelector(".text");
       if (text) {
         text.style.animation = "none";
-        text.offsetHeight; // trigger reflow
+        text.offsetHeight; 
         text.style.animation = "slideFade 1.5s ease forwards";
       }
     } else {
@@ -56,9 +55,6 @@ function showScreen(index) {
   });
 }
 
-/* -----------------------
-   Skip-to Panel Logic
------------------------- */
 function buildSkipList() {
   const panel = document.getElementById("skipPanel");
   panel.innerHTML = "";
@@ -70,13 +66,10 @@ function buildSkipList() {
     const p = scr.querySelector(".text");
     if (!p) return;
     const item = document.createElement("button");
-    item.type = "button";
     item.className = "skip-item";
     item.innerText = p.innerText.trim();
     item.addEventListener("click", () => {
       panel.classList.remove("open");
-      panel.setAttribute("aria-hidden", "true");
-      document.getElementById("skipToggle").setAttribute("aria-expanded", "false");
       showScreen(Number(id));
       currentScreen = Number(id);
     });
@@ -89,18 +82,9 @@ function initSkip() {
   const panel = document.getElementById("skipPanel");
 
   toggle.addEventListener("click", (e) => {
-    e.stopPropagation(); // don’t trigger nextScreen
+    e.stopPropagation(); 
     const willOpen = !panel.classList.contains("open");
     if (willOpen && panel.childElementCount === 0) buildSkipList();
     panel.classList.toggle("open");
-    panel.setAttribute("aria-hidden", String(!willOpen));
-    toggle.setAttribute("aria-expanded", String(willOpen));
-  });
-
-  toggle.addEventListener("keydown", (e) => {
-    if (e.key === "Enter" || e.key === " ") {
-      e.preventDefault();
-      toggle.click();
-    }
   });
 }
