@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400&family=Cairo:wght@300;400&display=swap');
 
 :root {
-  --bg-color: #08081a; /* Deep Navy Fallback */
+  --bg-color: #08081a; /* Deep Navy Fallback to fix white screen */
   --nebula-1: #0a0a2e; 
   --nebula-2: #1a0a1d; 
   --text-glow: rgba(255, 255, 255, 0.6);
@@ -12,12 +12,13 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--bg-color); /* Fixes the white screen issue */
+  background-color: var(--bg-color); 
   background: linear-gradient(135deg, var(--nebula-1), var(--nebula-2), var(--bg-color));
   background-size: 400% 400%;
   animation: nebulaShift 12s ease infinite;
   color: #fff;
-  font-family: 'Montserrat Alternates', 'Cairo', sans-serif;
+  /* Montserrat Alternates for English */
+  font-family: 'Montserrat Alternates', sans-serif;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -53,14 +54,19 @@ body {
   100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
 }
 
-/* Fast Text Animation (0.8s) */
+/* Updated Text Class to fix punctuation flip */
 .text {
   font-size: 1.8rem;
   max-width: 85%;
   line-height: 1.6;
   text-shadow: 0 0 10px var(--text-glow);
   opacity: 0;
-  animation: fastWhisper 0.8s ease-out forwards;
+  animation: fastWhisper 0.8s ease-out forwards; /* Fast speed: 0.8s */
+  
+  /* Forces English/LTR rules so dots stay on the right */
+  direction: ltr !important;
+  text-align: center;
+  unicode-bidi: isolate;
 }
 
 @keyframes fastWhisper {
@@ -68,7 +74,7 @@ body {
   100% { opacity: 1; filter: blur(0); transform: scale(1); }
 }
 
-/* Screen Transitions (0.5s) */
+/* Fast Screen Transitions */
 .screen {
   position: absolute;
   width: 100%;
@@ -123,7 +129,7 @@ body {
   50% { transform: translateY(-10px); }
 }
 
-/* UI/Skip Menu */
+/* UI/Skip Menu - The panel uses Cairo font for potential Arabic items */
 .skip-toggle {
   position: fixed;
   bottom: 25px;
@@ -160,13 +166,17 @@ body {
   background: none;
   border: none;
   color: #ccc;
-  text-align: right;
+  text-align: center;
   font-family: 'Cairo', sans-serif;
   cursor: pointer;
   border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
-.landing-text { font-size: 2rem; letter-spacing: 2px; }
+.landing-text { 
+  font-size: 2rem; 
+  letter-spacing: 2px; 
+  direction: ltr;
+}
 
 @media (max-width: 600px) {
   .text { font-size: 1.5rem; }
