@@ -1,26 +1,39 @@
 /* Your content. Edit freely.
    Blank line = new stanza. A line with == = new poem. "@en" on a poem's first line marks it as English. */
 window.POEMS_RAW = `
-ke mein tumhe chaand keh doun
-ye toh mumkin hai
+Chand ki pighli hui 
+chandni mein
 
-magar loug tumhe
-raat bhar dekhein
+Aou kuch rang-e-sukhan gholenge
 
-ye mujhay gawara nahi
+Tum nahi bolti ho? 
+Mat bolo. 
+
+Hum bhi ab tumse nahi bolenge
+
 ==
-kahan se laaun wo lafz
-jo tujay sunai dein
+Kis tarhan choor doun tumhe jaana
 
-duniya dekhay chand ko per
+Tum meri zindagi ki aadat ho
 
-mujhay toh sirf tu dikhai dey
+Dastaan khatam hone wali hai
+Tum meri aakhri mohobbat ho
+
 ==
-tum mere saath hogi toh
-kya kahega zamana
+Sharam
+Deyshat
+Jhijhak
+Pareshaniyan
 
-meri yehi ek tamman'ah hai
-tera yehi ek bahana hai
+Naaz se kaam kyun nahi leti? 
+
+Aap
+Woh 
+Jee
+Magar
+
+Ye sab kya hai?
+Tum mera naam kyun nahi leti?
 ==
 tumhare chehre ki chamak
 ke samne saada laga
